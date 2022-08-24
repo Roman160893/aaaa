@@ -1,0 +1,71 @@
+.users {
+   height: 100vh;
+   overflow: scroll;
+   background: url('../../img/UsersPage/bg.jpg') 0 0 / cover no-repeat;
+   &__container {
+      max-width: 1110px;
+      margin: 0 auto;
+      padding-top: 100px;
+      @media (max-width: 1024px) {
+         padding-top: 200px;
+      }
+   }
+   &__card {
+      display: flex;
+      border: 1px solid wheat;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
+      align-items: center;
+      background: #6e562769;
+      margin: 10px;
+      animation: card 2s;
+      @keyframes card {
+         0% {
+            opacity: 0;
+         }
+         100% {
+            opacity: 1;
+         }
+      }
+      &-avatar {
+         margin-right: 40px;
+         position: relative;
+         &::before {
+            content: '';
+            width: 1px;
+            height: 75px;
+            position: absolute;
+            background: white;
+            right: -20px;
+            top: 0;
+         }
+         & img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+         }
+      }
+      &-nick{
+         font-family: 'Rubik Dirt', cursive;
+         font-size: 22px;
+         & .users-nick {
+            margin-left: 10px;
+            font-size: 26px;
+         }
+      }
+      @media (max-width: 1024px) {
+         &-nick{
+            font-size: 20px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            & .users-nick {
+               margin-left: 0px;
+               font-size: 18px;
+            }
+         }
+      }
+   }
+}
