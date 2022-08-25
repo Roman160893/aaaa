@@ -12,7 +12,7 @@ const AddUserPage = () => {
    const [valueAvatar, setValueAvatar] = useState('https://i.ytimg.com/vi/7Zxb3YjkLiA/maxresdefault.jpg')
 
    const dispatch = useDispatch()
-   const apiUrl = 'http://localhost:7777/addUser'
+   const apiUrl = 'htttp://roman160893.github.io/yournews/:7777/addUser'
 
    function getValueName(e) {
       setValueName(e.target.value)

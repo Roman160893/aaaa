@@ -7,7 +7,7 @@ import './HeaderStyle.scss'
 const Header = () => {
 
    const dispatch = useDispatch()
-   const urlUsers = 'http://localhost:7777/users'
+   const urlUsers = 'htttp://roman160893.github.io/yournews/:7777/users'
 
    function clickUser() {
       dispatch(getToUsersCollections(urlUsers))
