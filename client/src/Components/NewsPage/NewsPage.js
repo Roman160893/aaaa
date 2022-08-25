@@ -21,7 +21,7 @@ const NewsPage = () => {
       newsText,
       newsPicture
    }
-   console.log(selectorNews);
+
    function valueEdit(e, pos) {
       setPost(selectorNews[pos])
       setEdit(!edit)

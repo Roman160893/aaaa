@@ -11,10 +11,9 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const corsOptions = {
-   origin: "htttp://roman160893.github.io/yournews/",
+   origin: "http://localhost:3000",
    optionsSuccessStatus: 200
 }
-
 
 //Model-users 
 
