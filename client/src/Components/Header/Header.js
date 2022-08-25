@@ -7,7 +7,7 @@ import './HeaderStyle.scss'
 const Header = () => {
 
    const dispatch = useDispatch()
-   const urlUsers = 'https://infinite-depths-24675.herokuapp.com/users'
+   const urlUsers = '"htttp://roman160893.github.io/yournews/server/users'
 
    function clickUser() {
       dispatch(getToUsersCollections(urlUsers))

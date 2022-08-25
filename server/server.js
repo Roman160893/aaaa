@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const appPort = 'https://infinite-depths-24675.herokuapp.com/';
+const appPort = 7777;
 const mongoUrl = 'mongodb+srv://demchukR:demchukR@cluster0.7eydhun.mongodb.net/?retryWrites=true&w=majority';
 
 const app = express();
